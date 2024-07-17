@@ -16,7 +16,11 @@
     	items: 1,
 	    loop:true,
 	    margin:10,
-	    nav:true
+	    nav:true,
+      autoplay:true,
+      autoplayTimeout:5000,
+      autoplayHoverPause:true
+      
 	});
 
     // SMOOTHSCROLL
@@ -32,5 +36,9 @@
 
     // TOOLTIP
     $('.social-links a').tooltip();
+    
+    $(window).on('load', function() {
+      $('#js-preloader').addClass('loaded');
+    });
 
 })(jQuery);

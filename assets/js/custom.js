@@ -150,7 +150,7 @@
               currLink.addClass("active");
           }
           else{
-              currLink.removeClass("active");
+            currLink.removeClass("active");
           }
       });
   }
@@ -159,10 +159,8 @@
 
 	// Page loading animation
 	 $(window).on('load', function() {
-
-        $('#js-preloader').addClass('loaded');
-
-    });
+      $('#js-preloader').addClass('loaded');
+  });
 
 	
 
